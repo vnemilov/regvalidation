@@ -5,7 +5,7 @@
  <link rel="stylesheet" href="resources/css/loginLayout.css">
  <link rel="stylesheet" href="resources/css/popup.css">
  <title>Home</title>
- <script type="text/javascript">
+ <script>
 			var link;
 			var element;
 			function openPopUpRegistration(url)
@@ -27,7 +27,7 @@
 			}
 
 		</script>
-<script type="text/javascript">
+<script>
 			var link;
 			var element;
 			function openPopUpPass(url)
@@ -94,7 +94,7 @@ userCheck = false;
 eu.style.display = 'block';
 setTimeout(function() {
     $('#errorUsername').fadeOut('slow');
-}, 1500);
+}, 2500);
 }
 if(x.id=="regPassword" && /(?=.*?[A-Z])[a-zA-Z]*\d[a-zA-Z\d]*$/.test(x.value) && x.value.length>=6 ){
 ep.style.display='none';
@@ -108,7 +108,7 @@ x.style.color='rgba(255, 0, 0, 1)';
 x.style.border='1px solid red'; 
 setTimeout(function() {
     $('#errorPassword').fadeOut('slow');
-}, 1500);
+}, 2500);
 }
 if(x.id=="confirmPassword" && x.value == document.getElementById("regPassword").value){
 x.style.color='rgba(166, 166, 166, 0.9)';
@@ -119,9 +119,7 @@ else if(x.id=="confirmPassword"){confPass=false;
 x.style.color='rgba(255, 0, 0, 1)'; 
 x.style.border='1px solid red';
 ecp.style.display='block';
-setTimeout(function() {
-    $('#errorConfirmPassword').fadeOut('slow');
-}, 1000);}
+}
 if(userCheck==true && passCheck==true && confPass==true){
 b.removeAttribute("disabled");
 }else{
