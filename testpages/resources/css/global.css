@@ -1,0 +1,25 @@
+*{
+margin:0;
+padding: 0;
+}
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+body {
+background: url(../images/background.jpg);
+	font-family: 'Roboto', sans-serif;
+}
+
+#login{
+	display:block;
+	margin: auto;
+	position: absolute;
+	top: 50%; 
+	left: 50%;
+	margin-left:-123px;
+	margin-top:-200px;
+}
+h2{
+color:red;
+}
+.enableLogin{
+cursor:pointer;}

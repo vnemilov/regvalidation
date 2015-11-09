@@ -1,0 +1,53 @@
+.popUpDisplay {
+border: 1px #5b88aa solid;
+border-radius: 10px;
+background: rgba(255, 255, 255, 0.7);
+-webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+    display: none;
+    position: absolute;
+    width: 400px;
+    left: 35%;
+	top:20%;
+    z-index: 1001;
+}
+
+.popUpDisplayReg {
+border: 1px #5b88aa solid;
+border-radius: 10px;
+background: rgba(255, 255, 255, 0.7);
+-webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+    display: none;
+    position: absolute;
+    width: 470px;
+    left: 34.3%;
+	top:12.5%;
+    z-index: 1001;
+}
+.popUpDisplayReg div.data form div.user-field span.user-field-text{
+width:175px;}
+
+.dimLayer {
+margin-top:0;
+margin-bottom: 0;
+    display: none;
+    outline: 0px none;
+    height: 100%;
+    width: 100%;
+	background: url(../images/background.jpg);
+    top: 0;
+    left: 0;
+    z-index: 900;
+    position: absolute;
+    opacity: 1;
+    filter: alpha(opacity=50);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    -khtml-opacity: 0.5;
+    -moz-opacity: 0.5;
+}
+
+.close{
+cursor:pointer;}

@@ -1,0 +1,224 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+
+body {
+	background: url(../images/background.jpg);
+	font-family: 'Roboto', sans-serif;
+}
+
+div{
+	margin: 20px 0px 20px 0;
+}
+
+a{
+	text-decoration:none;
+	display:block;
+	float:right;
+    margin-top: -15px;
+	margin-right: 50px;
+	}
+	
+input[type="text"], input[type="password"], input[type="email"] {
+	font-style: oblique;
+	font-family: "Roboto";
+	font-size: 18px;
+	font-weight: 400;
+	color: rgba(165, 166, 166, 0.9);
+	text-align: left;
+	background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%,
+		rgba(255, 255, 255, 0.8) 100%);
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(255, 255, 255);
+	border-bottom: none;
+	width: 166px;
+	padding: 10px 10px 9px 12px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.7);
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px
+		rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px
+		rgba(0, 0, 0, 0.2);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px
+		rgba(0, 0, 0, 0.2);
+}	
+	
+input[type=submit] {
+	border-radius: 5px;
+	border: 1px solid #AAA;
+	margin-top: 15px;
+	width: 170px;
+	height: 40px;
+	font-family: Roboto;
+	font-weight: 400;
+	font-size: 18px;
+	-webkit-font-smoothing: antialiased;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
+	color: #424450;
+	-webkit-box-shadow: 0px 0px 2px 1px rgba(102, 102, 102, 0.5);
+	-moz-box-shadow: 0px 0px 2px 1px rgba(102, 102, 102, 0.5);
+	box-shadow: 0px 0px 2px 1px rgba(102, 102, 102, 0.5);
+	cursor: pointer;
+	margin-left: -85;
+	position: relative;
+	left: 32%;
+	cursor:pointer;
+}
+
+input[type=submit]:disabled {
+	border-radius: 5px;
+	border: 1px solid #AAA;
+	margin-top: 15px;
+	width: 170px;
+	height: 40px;
+	font-family: Roboto;
+	font-weight: 400;
+	font-size: 18px;
+	-webkit-font-smoothing: antialiased;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
+	color:rgba(68,68,80,0.6);
+	-webkit-box-shadow: 0px 0px 2px 1px rgba(102, 102, 102, 0.5);
+	-moz-box-shadow: 0px 0px 2px 1px rgba(102, 102, 102, 0.5);
+	box-shadow: 0px 0px 2px 1px rgba(102, 102, 102, 0.5);
+	cursor: pointer;
+	margin-left: -85;
+	position: relative;
+	left: 32%;
+	cursor:default;
+	opacity:0.7;
+}
+
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+.fLeft {
+	float: left;
+}
+
+.closePop{
+float:right;
+margin-right:-10px;
+margin-top:-10px;
+}
+
+
+/* BEGIN OF CONTENT*/
+.content {
+	background: rgba(255, 255, 255, 0.7);
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+	width: 400px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -320px;
+	margin-left: -200px;
+	padding-bottom: 20px;
+	border: 1px #5b88aa solid;
+	z-index: 1;
+}
+
+.form:focus {
+	background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%,
+		rgba(255, 255, 255, 0.8) 100%);
+}
+
+.user-field-text {
+	margin-left: 50px;
+	float: left;
+	display: block;
+	width: 110px;
+	line-height: 50px;
+	margin-top: -2px;
+	margin-bottom: 12px;
+	font-family: Roboto;
+	font-weight: 400;
+	font-size: 18px;
+	-webkit-font-smoothing: antialiased;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.7);
+	color: #424450;
+}
+
+#lightbox{
+    visibility:hidden;
+    position:absolute;
+   background: rgba(255, 255, 255, 0.7);
+    border:2px solid #3c3c3c;
+    color:white;
+    z-index:100;
+    padding:20px;
+}
+
+.dimmer{
+background: url(../images/background.jpg);
+    position: absolute;
+    opacity: .5;
+    top: 0;
+    z-index:99;
+}
+.arrow_box {
+border-radius:5px;
+padding-left:2px;
+text-align:center;
+	position: relative;
+	background: #c5a0d5;
+	border: 1px solid #f5d091;
+}
+.arrow_box:after, .arrow_box:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(197, 160, 213, 0);
+	border-top-color: #c5a0d5;
+	border-width: 8px;
+	margin-left: -8px;
+}
+.arrow_box:before {
+	border-color: rgba(245, 208, 145, 0);
+	border-top-color: #f5d091;
+	border-width: 9px;
+	margin-left: -9px;
+}
+#errorUsername {
+font-size:10px;
+width:291px;
+position:absolute;
+left: 145px;
+top: -36px;
+}
+	
+#errorPassword{
+font-size:10px;
+width:291px;
+position:absolute;
+top: 29px;
+left: 145px;
+}
+
+#errorConfirmPassword{
+font-size:10px;
+width:145px;
+position:absolute;
+top:107px;
+left:210px;
+}
+
+/* END OF CONTENT*/
